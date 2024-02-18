@@ -4,6 +4,13 @@ from . import views
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Hello World")
+    return render(request, "index.html")
+
+def register(request):
+    return render(request, "register.html")
+
+def login(request):
+    return render(request, "login.html")
+
 
     
